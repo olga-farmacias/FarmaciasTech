@@ -1,0 +1,145 @@
+ .banner-header{
+    background-color: #3A56FF;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .text-banner-header {
+    display: block;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+    padding: 12px;
+    margin: 0 auto;
+ }
+
+ .btn-banner {
+    border: none;
+    background-color: #3A56FF;
+ }
+
+ .btn-banner-close {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+ }
+
+ .open {
+    background-color: #3A56FF;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+ }
+
+ .closed {
+    display: none;
+ }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    font-size: 18px;
+    line-height: 19px;
+    color: #2C2E58;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    font-weight: 400;
+    cursor: pointer;
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 45px;
+    list-style: none;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    background-color: #FFFFFF;
+    z-index: 1000;
+    right: -140px;
+    padding: 17px;
+}
+
+.sub-menu-option {
+    color: #3A56FF;
+}
+
+.link-selected {
+    color: #2C2E58;
+}
+
+.sub-menu li {
+    padding-bottom: 9px;
+}
+
+@media (min-width: 1024px) {
+    app-hamburger-menu {
+        display: none;
+    }    
+    .nav-menu {
+        display: flex;
+    }
+}
+
+@media (max-width: 1024px) {
+    app-hamburger-menu {
+        display: block;
+    }    
+}
+
+
+.btn-login {
+    display: none;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .btn-login {
+        display: block;
+        align-items: center;
+        font-weight: 700;
+    }
+}
+
+.logo-farmaciasTech {
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+    .logo-farmaciasTech {
+        height: 100%;
+    }
+}
+
+.btn-contactanos {
+    background-color: #2B80FF;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 16px;
+    padding: 8px;
+    font-weight: 700;
+    cursor: pointer;
+}
+

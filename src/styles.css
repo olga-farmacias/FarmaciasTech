@@ -1,1 +1,57 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+    box-sizing: border-box;
+    font-family: 'Maven Pro';
+    font-style: normal;
+    color: #2B2D58;
+}
+
+body {
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+.container-color {
+    background-color: #EFF1FE;
+    width: 100%;
+}
+
+.container-naranja {
+    background-color: #FF941F;
+    width: 100%;
+}
+
+
+.container {
+    width: 100%;
+}
+
+.width1600 {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 28px;
+}
+
+@media (min-width: 1024px) {
+    .width1600 {
+        padding: 0 80px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .desktop-no {
+        display: none;
+    } 
+}
+
+@media (max-width: 1024px) {
+    .mobile-no {
+        display: none;
+    } 
+}
+
+
+
+

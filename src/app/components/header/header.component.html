@@ -1,0 +1,33 @@
+<div class="wrapper">
+    <div class="container">
+        <div class="banner-header" [ngClass] = "{'closed': estado, 'open': !estado}">
+            <span class="text-banner-header">info@farmacias.tech Tel.: 910 602 748</span>
+            <button class="btn-banner" type="button" (click)="cambiarEstado()">
+                <span class="btn-banner-close">X</span>
+            </button>
+        </div>
+        <div class="width1600">
+            <div class="header">
+                <img [routerLink]="['inicio']" class="logo-farmaciasTech" src="/assets/logosFarmacias/farmaciasTech.png" alt="logo-farmaciasTech">
+                <nav>
+                    <ul class="nav-menu">
+                        <li><a [routerLink]="" routerLinkActive="link-selected">Quienes somos</a></li>
+                        <li><a [routerLink]="" (click)="openServicios()">Servicios</a></li>
+                        <ng-container *ngIf="subMenu">
+                            <ul class="sub-menu">
+                                <li><a class="sub-menu-option" [routerLink]="['/buy-now']" routerLinkActive="link-selected">Buy Now</a></li>
+                                <li><a class="sub-menu-option" [routerLink]="['monitoriza-tu-marca']" routerLinkActive="link-selected">Monitoriza tu marca</a></li>
+                                <li><a class="sub-menu-option" [routerLink]="['ads']" routerLinkActive="link-selected">Ads, Publicidad b2c - b2b</a></li>
+                            </ul>
+                        </ng-container>
+                    </ul>
+                </nav>
+<!--                 <app-hamburger-menu></app-hamburger-menu>-->     
+               <div class="btn-login">
+                    <button class="btn-contactanos" [routerLink]="">Contáctanos</button>    
+                </div>
+                <app-hamburger-menu [bannerClosed]="estado"></app-hamburger-menu>           
+            </div>        
+        </div>
+    </div>
+</div>

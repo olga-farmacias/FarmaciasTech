@@ -1,0 +1,213 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: 392px;
+    background-color: #EFF1FE;
+    gap: 16px;
+    padding: 33px 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    .footer {
+        flex-direction: row;
+        padding: 80px 0;
+        gap: 24px;
+    }
+}
+
+.footer-bottom {
+    background-color: #2B80FF;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+    .footer-bottom {
+        background-color: #2B80FF;
+        display: flex;
+        justify-content: center;
+    }     
+}
+
+.footer-bottom-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding-top: 43px;
+    padding-bottom: 43px;
+}
+
+.footer-bottom-contacts {
+    padding-top: 20px;
+    padding-bottom: 19px;
+    padding-right: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-bottom-contacts span {
+    font-size: 12px;
+    line-height: 14px;
+    color: #FFFFFF;
+}
+
+.footer-bottom-logo {
+    padding-top: 24px;
+    padding-left: 25px;
+    height: 88px;
+    align-self: center;
+}
+
+.footer-bottom-mobile {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 24px;
+}
+
+@media (min-width: 1024px) {
+    .footer-bottom-mobile {
+        display: none;
+    }
+}
+
+.footer-menu, .footer-service, .footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0 16px;
+}
+
+.footer-contact {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .footer-contact {
+        display: flex;
+        flex-basis: 30%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0 16px;    
+    }
+}
+
+.footer-menu {
+    flex-basis: 20%;
+}
+
+.footer-service {
+    flex-basis: 20%;
+}
+
+.footer-logo {
+    flex-basis: 30%;
+}
+
+ul {
+    padding: 0;
+}
+
+.footer-menu li, .footer-service li, .footer-contact li {
+    list-style: none;
+    padding: 4px 0;
+}
+
+
+.footer-logo {
+    height: 70px;
+
+}
+
+.logo-farmaciasTech {
+    display: none;
+    height: 70px;
+    padding-bottom: 9px;
+}
+
+@media (min-width: 1024px) {
+    .logo-farmaciasTech {
+        display: block;
+    }
+}
+
+.title2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 12px 0 0 0;
+}
+
+@media (min-width: 1024px) {
+    .title2 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        padding-bottom: 9px;
+    }    
+}
+
+.text2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    cursor: pointer;
+}    
+
+@media (min-width: 1024px) {
+    .text2 {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        cursor: pointer;
+    }    
+}
+
+.text2-logo {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #3A56FF;
+    margin: 12px 0;
+}
+
+@media (min-width: 1024px) {
+    .text2-logo {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        padding-right: 24px;
+        color: #2B2D58;
+    }    
+}
+
+
+.text2-icono {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin: 4px 0;
+}
+
+.svg-width {
+    width: 20px;
+    fill: #FFFFFF;
+}
+
+@media (min-width: 1024px) {
+    .svg-width {
+        width: 20px;
+        fill: #2B2D58;
+    }
+}
+

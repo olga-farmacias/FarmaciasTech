@@ -1,0 +1,38 @@
+<button class="hamburger-button" (click)="toggleMenu()" *ngIf="!isMenuOpen">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+</button>
+
+<button class="hamburger-button-close" (click)="toggleMenu()" *ngIf="isMenuOpen">
+    <span class="close-btn">X</span>
+</button>
+
+  
+<div class="menu" [hidden]="!isMenuOpen" [ngClass]="{'is-open': isMenuOpen, 'is-banner-closed': bannerClosed}">
+    <nav>
+        <ul>
+            <li class="border">
+                <a class="text2" [routerLink]="">Quienes somos</a>
+            </li>
+            <li class="servicios-menu border">
+                <a class="text2" [routerLink]="">Servicios</a>
+                <img class="flecha-abajo" (click)="showsSubMenu = !showsSubMenu" src="/assets/inicio/flecha-abajo.png" alt="flecha-abajo">
+            </li>
+            <div class="submenu" *ngIf="showsSubMenu">
+                <a [routerLink]="['buy-now']" routerLinkActive="link-selected">Buy now</a>
+                <a [routerLink]="['monitoriza-tu-marca']" routerLinkActive="link-selected">Monitoriza tu marca</a>
+                <a [routerLink]="['ads']" routerLinkActive="link-selected">Ads, Publicidad b2c - b2b</a>
+            </div>
+            <div class="btn-hamburger saber-mas">
+                <button type="button" class="btn-hamburger-menu" [routerLink]=""><span class="btn-text">Saber más</span></button>
+            </div>
+            <div class="btn-hamburger agenda">
+                <button type="button" class="btn-hamburger-menu" [routerLink]=""><span class="btn-text">Agenda una demo</span></button>
+
+            </div>
+        </ul>
+    </nav>
+</div>
+  
+
