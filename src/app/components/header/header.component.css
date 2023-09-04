@@ -57,7 +57,7 @@ a {
 .nav-menu {
     display: none;
     flex-direction: row;
-    gap: 20px;
+    gap: 40px;
     list-style: none;
     align-items: center;
     font-weight: 400;
@@ -76,6 +76,8 @@ a {
     z-index: 1000;
     right: -140px;
     padding: 17px;
+    transition: transform .3s ease-in-out;
+
 }
 
 .sub-menu-option {
@@ -84,6 +86,7 @@ a {
 
 .link-selected {
     color: #2C2E58;
+    font-weight: bold;
 }
 
 .sub-menu li {
@@ -125,6 +128,7 @@ a {
     height: 100%;
     align-items: center;
     cursor: pointer;
+    padding: 12px 0;
 }
 
 @media (min-width: 1024px) {
@@ -143,3 +147,8 @@ a {
     cursor: pointer;
 }
 
+.btns {
+   display: flex;
+   gap: 10px;
+
+}

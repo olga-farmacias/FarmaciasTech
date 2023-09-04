@@ -1,30 +1,16 @@
 .inicio1 {
     display: flex;
     flex-direction: column-reverse;
-    gap: 30px;
-}
-
-@media (min-width: 1024px) {
-    .inicio1 {
-        display: flex;
-        flex-direction: row;
-        gap: 160px;
-    }
+    gap: 12px;
 }
 
 .inicio-title {
     font-weight: 700;
     font-size: 48px;
     line-height: 46px;
-    padding-right: 120px;
-}
-
-@media (min-width: 1024px) {
-    .inicio-title {
-        font-weight: 700;
-        font-size: 82px;
-        line-height: 70px;    
-    }
+    width: 100%;
+    padding-right: 18px;
+    margin: 10px 0 20px 0;
 }
 
 .inicio-text {
@@ -33,13 +19,8 @@
     line-height: 18,8px;
 }
 
-@media (min-width: 1024px) {
-    .inicio-text {
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 21px;
-    }
-    
+.inicio-text li {
+    padding: 4px 0;
 }
 
 .btn-inicio {
@@ -51,24 +32,11 @@
     border: none;
     border-radius: 16px;
     padding: 8px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    margin-top: 14px;
     cursor: pointer;
+    width: fit-content;
 }   
-
-@media (min-width: 1024px) {
-    .btn-inicio {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 19px;
-        color: #FFFFFF;
-        background-color: #2B80FF;
-        border: none;
-        border-radius: 16px;
-        padding: 8px;
-        margin-bottom: 66px;
-        cursor: pointer;
-    }    
-}
 
 .left {
     align-self: flex-start;
@@ -86,16 +54,6 @@
     text-align: center;
 }
 
-@media (min-width: 1024px) {
-    .title2-center {
-        font-weight: 700;
-        font-size: 18px;
-        line-height: 21px;
-        align-self: center;
-        text-align: center;
-    }    
-}
-
 .title2 {
     font-weight: 700;
     font-size: 20px;
@@ -103,45 +61,80 @@
     align-self: flex-start;
 }
 
-@media (min-width: 1024px){
+.text-part {
+    flex-basis: 50%;
+    width: 100%;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}    
+
+.img-part {
+    flex-basis: 50%;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+}
+
+.img-inicio {
+    max-width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .inicio1 {
+        display: flex;
+        flex-direction: row;
+        gap: 160px;
+    }
+    .inicio-title {
+        font-weight: 700;
+        font-size: 82px;
+        line-height: 70px;
+        padding-right: 0;
+        margin: 18px 0;
+    }
+    .inicio-text {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 14px;
+    }
+    .btn-inicio {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background-color: #2B80FF;
+        border: none;
+        border-radius: 16px;
+        padding: 8px;
+        margin-bottom: 20px;
+        cursor: pointer;
+    }    
+    .title2-center {
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        align-self: center;
+        text-align: center;
+    }    
     .title2 {
         font-weight: 700;
         font-size: 24px;
         line-height: 28px;    
         align-self: flex-start;
     }
-}
-
-@media (min-width: 1024px) {
     .right {
         align-self: flex-end;
         text-align: right;
     }
-}
-
-.text-part {
-    flex-basis: 45%;
-    width: 100%;
-    padding-bottom: 30px;
-}    
-
-@media (min-width: 1024px) {
     .text-part {
-        flex-basis: 45%;
-        width: 100%;
         padding-left: 25px;
-        padding-bottom: 80px;
+        padding-bottom: 10px;
+        padding-top: 18px;
     }    
-}
 
-.img-part {
-    flex-basis: 55%;
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.img-inicio {
-    max-width: 100%;
 }
 
 .tecno {
@@ -164,30 +157,23 @@
     padding-bottom: 3px;
 }
 
-@media (min-width: 1024px) {
-    .tecno-title {
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 28px;
-    }    
-}
-
 .tecno-text {
     font-weight: 400;
     font-size: 16;
     line-height: 19px;
 }
 
-@media (min-width: 1024px) {
-    .tecno-text {
-        font-weight: 400;
-        font-size: 24px;
-        line-height: 28px;
-    }    
-}
-
 .tecno-img {
     max-width: 100%;
+    padding-bottom: 52px;
+}
+
+.title-herramientas {
+    font-size: 28px;
+    font-weight: 700;
+    padding-top: 36px;
+    text-align: center;
+    margin: 20px 0;
 }
 
 .options {
@@ -197,39 +183,9 @@
     flex-basis: 100%;
 }
 
-@media (min-width: 1024px) {
-    .options {
-        flex-direction: row;
-        padding-top: 30px;
-        padding-bottom: 65px;    
-    }
-}
-
 hr {
     display: none;
 }
-
-@media (min-width: 1024px) {
-    .hr-left {
-        display: block;
-        width: 398px;
-        border: 1px solid #0808FC;
-        position: absolute; 
-        top: 430px;   
-    }
-}
-
-@media (min-width: 1024px) {
-    .hr-right {
-        display: block;
-        width: 398px;
-        border: 1px solid #0808FC;
-        position: absolute; 
-        top: 360px;
-        right: 1px;
-    }
-}
-
 
 .option-info {
     display: flex;
@@ -253,11 +209,48 @@ hr {
     max-width: 100%;
 }
 
+@media (min-width: 1024px) {
+    .tecno-title {
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 28px;
+    }    
+    .tecno-text {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+    }    
+    .options {
+        flex-direction: row;
+        padding-top: 30px;
+        padding-bottom: 55px;    
+    }
+    .hr-left {
+        display: block;
+        width: 398px;
+        border: 1px solid #0808FC;
+        position: absolute; 
+        top: 430px;   
+    }
+    .hr-right {
+        display: block;
+        width: 398px;
+        border: 1px solid #0808FC;
+        position: absolute; 
+        top: 360px;
+        right: 1px;
+    }
+    .title-herramientas {
+        font-size: 38px;
+    }
+}
+
 .partners {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
 }
 
 .title1 {
@@ -285,7 +278,7 @@ hr {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 566px;
+    padding: 10px 0 36px;
 }
 
 .testimonios-quotes {
@@ -325,15 +318,27 @@ hr {
     font-weight: 400;
     font-size: 16px;
     line-height: 18,8px;
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+.text2-bold {
+    font-weight: bold;
+    margin-top: 4px;
 }
 
 @media (min-width: 1024px) {
-    .text2 {
+    .text2, .text2-lista li {
         font-weight: 400;
         font-size: 18px;
         line-height: 21px;
     }    
 }
+
+.text2-lista {
+    padding-bottom: 42px;
+}
+
 
 .text1 {
     font-weight: 400;

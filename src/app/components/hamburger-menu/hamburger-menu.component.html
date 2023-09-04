@@ -13,11 +13,11 @@
     <nav>
         <ul>
             <li class="border">
-                <a class="text2" [routerLink]="">Quienes somos</a>
+                <a class="text2" [routerLink]="['quienes-somos']">Quienes somos</a>
             </li>
-            <li class="servicios-menu border">
+            <li class="servicios-menu border" (click)="showsSubMenu = !showsSubMenu">
                 <a class="text2" [routerLink]="">Servicios</a>
-                <img class="flecha-abajo" (click)="showsSubMenu = !showsSubMenu" src="/assets/inicio/flecha-abajo.png" alt="flecha-abajo">
+                <img class="flecha-abajo" [ngClass]="{'rotate-image': showsSubMenu}" src="/assets/inicio/flecha-abajo.png" alt="flecha-abajo">
             </li>
             <div class="submenu" *ngIf="showsSubMenu">
                 <a [routerLink]="['buy-now']" routerLinkActive="link-selected">Buy now</a>
@@ -25,10 +25,10 @@
                 <a [routerLink]="['ads']" routerLinkActive="link-selected">Ads, Publicidad b2c - b2b</a>
             </div>
             <div class="btn-hamburger saber-mas">
-                <button type="button" class="btn-hamburger-menu" [routerLink]=""><span class="btn-text">Saber más</span></button>
+                <button type="button" class="btn-hamburger-menu"><span class="btn-text"><a class="btn-text" href="https://reuniones.clientify.com/#/Josepiquer/tech" target="_blank">Saber más</a></span></button>
             </div>
             <div class="btn-hamburger agenda">
-                <button type="button" class="btn-hamburger-menu" [routerLink]=""><span class="btn-text">Agenda una demo</span></button>
+                <button type="button" class="btn-hamburger-menu" [routerLink]=""><span class="btn-text"><a class="btn-text" href="https://reuniones.clientify.com/#/Josepiquer/tech" target="_blank">Agenda una demo</a></span></button>
 
             </div>
         </ul>

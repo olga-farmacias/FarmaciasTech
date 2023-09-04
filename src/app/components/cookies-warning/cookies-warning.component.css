@@ -1,0 +1,26 @@
+.cookie-warning {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: #2a354d;
+    color: white;
+    text-align: center;
+    z-index: 9999;
+    font-family: 'Karla', sans-serif;
+}
+  
+.cookie-warning button {
+    background-color: #3e74d7;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 90px;
+}
+  
+.aviso-cookie {
+    color: #fff;
+}

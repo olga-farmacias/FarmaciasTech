@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { CookieService } from 'ngx-cookie-service';
+
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -11,6 +14,11 @@ import { HamburgerMenuComponent } from './components/hamburger-menu/hamburger-me
 import { BuyNowComponent } from './components/buy-now/buy-now.component';
 import { MonitorizaTuMarcaComponent } from './components/monitoriza-tu-marca/monitoriza-tu-marca.component';
 import { ADSComponent } from './components/ads/ads.component';
+import { QuienesSomosComponent } from './components/quienes-somos/quienes-somos.component';
+import { AvisoLegalComponent } from './components/aviso-legal/aviso-legal.component';
+import { PoliticaPrivacidadComponent } from './components/politica-privacidad/politica-privacidad.component';
+import { CookiesComponent } from './components/cookies/cookies.component';
+import { CookiesWarningComponent } from './components/cookies-warning/cookies-warning.component';
 
 @NgModule({
   declarations: [
@@ -21,14 +29,22 @@ import { ADSComponent } from './components/ads/ads.component';
     HamburgerMenuComponent,
     BuyNowComponent,
     MonitorizaTuMarcaComponent,
-    ADSComponent
+    ADSComponent,
+    QuienesSomosComponent,
+    AvisoLegalComponent,
+    PoliticaPrivacidadComponent,
+    CookiesComponent,
+    CookiesWarningComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    SlickCarouselModule
   ],
-  providers: [],
+  providers: [
+    CookieService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

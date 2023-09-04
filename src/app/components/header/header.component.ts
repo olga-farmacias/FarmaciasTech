@@ -1,4 +1,7 @@
 import { Component, HostListener, ElementRef } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { Observable } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -10,7 +13,14 @@ export class HeaderComponent {
   estado: boolean = sessionStorage.getItem('phone-banner') == 'closed';
   subMenu: boolean = false;
 
-  constructor(private elementRef: ElementRef){
+  url$: Observable<string> = new Observable<string>();
+
+  constructor(private elementRef: ElementRef,
+    private router: Router){
+      router.events.subscribe( (val) => {
+        
+        this.subMenu = false;
+        });
   }
   
   cambiarEstado(): void {

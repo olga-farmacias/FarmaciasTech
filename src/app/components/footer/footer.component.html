@@ -4,21 +4,21 @@
             <div class="footer">
                 <div class="footer-logo">
                     <img class="logo-farmaciasTech" src="/assets/logosFarmacias/farmaciasTech.png" alt="logo-farmaciasTech">
-                    <p class="text2-logo">Al servicio de la industria farmacéutica y de la Tecnología</p>
+                    <p class="text2-logo">Tecnología al servicio de la industria farmacéutica de la mano de los mejores prescriptores, las farmacias</p>
                 </div>
                 <div class="footer-menu">
                     <h4 class="title2">Menú</h4>
                     <ul>
-                        <li class="text2"><a [routerLink]="">Quienes somos</a></li>
-                        <li class="text2"><a [routerLink]="">Servicios</a></li>
-                    </ul>
+                        <li class="text2"><a [routerLink]="['quienes-somos']">Quienes somos</a></li>
+<!--                         <li class="text2"><a [routerLink]="">Servicios</a></li>
+ -->                    </ul>
                 </div>
                 <div class="footer-service">
                     <h4 class="title2">Servicios</h4>
                     <ul>
-                        <li class="text2"><a [routerLink]="">Buy now</a></li>
-                        <li class="text2"><a [routerLink]="">Publicidad</a></li>
-                        <li class="text2"><a [routerLink]="">Tecnología a tu servicio</a></li>
+                        <li class="text2"><a [routerLink]="['buy-now']">Buy now</a></li>
+                        <li class="text2"><a [routerLink]="['ads']">Publicidad</a></li>
+                        <li class="text2"><a [routerLink]="['monitoriza-tu-marca']">Tecnología a tu servicio</a></li>
                     </ul>
         
                 </div>
@@ -33,7 +33,7 @@
         </div>
     </div>
     <div class="footer-bottom">
-            <span class="footer-bottom-text mobile-no">© Farmactitud 2023 · <a [routerLink]="" style="cursor: pointer;">Política de privacidad</a> · <a [routerLink]="" style="cursor: pointer;">Cookies</a> · Paseo de los Robles 2 , 5-2, 04720 Aguadulce, Almería</span>
+            <span class="footer-bottom-text mobile-no">© Farmactitud 2023 ·<a [routerLink]="['aviso-legal']" style="cursor: pointer;">Aviso legal</a> ·<a [routerLink]="['politica-de-privacidad']" style="cursor: pointer;">Política de privacidad</a> · <a [routerLink]="['cookies']" style="cursor: pointer;">Cookies</a> · Paseo de los Robles 2 , 5-2, 04720 Aguadulce, Almería</span>
             <div class="footer-bottom-mobile">
                 <img class="footer-bottom-logo desktop-no" src="/assets/logosFarmacias/logo-footer.png" alt="logo-farmaciasTech">
                 <div class="footer-bottom-contacts desktop-no">

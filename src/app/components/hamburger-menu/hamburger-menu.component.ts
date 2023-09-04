@@ -1,4 +1,5 @@
 import { Component, Directive, ElementRef, HostBinding, HostListener, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-hamburger-menu',
@@ -11,6 +12,15 @@ export class HamburgerMenuComponent {
 
   isMenuOpen: boolean = false;
   showsSubMenu: boolean = false;
+
+
+constructor(private router: Router){
+  router.events.subscribe( (val) => {
+        
+      this.isMenuOpen = false;
+      this.showsSubMenu = false;
+  });
+}
 
   toggleMenu(): void {
     this.isMenuOpen = !this.isMenuOpen;

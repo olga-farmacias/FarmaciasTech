@@ -32,7 +32,7 @@
 .close-btn {
     font-size: 32px;
     line-height: 32px;
-    color: #2B2D58; 
+    color: #A6A7AA; 
 }
 
 .is-open {
@@ -51,6 +51,10 @@ a {
     color: #3A56FF;
 }
 
+.menu {
+    z-index: 100;
+}
+
 .menu ul {
     list-style: none;
     display: flex;
@@ -63,6 +67,7 @@ a {
     padding-bottom: 37px;
     padding-left: 0;
     cursor: pointer;
+
 }
 
 .li-btn-contactanos {
@@ -115,6 +120,8 @@ a {
 
 .flecha-abajo {
     height: 14px;
+    transition: transform .3s ease-in-out;
+
 }
 
 .border {
@@ -154,4 +161,13 @@ a {
 
 .link-selected {
     color: #2C2E58;
+}
+
+.rotate-image {
+    -webkit-transform:rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+    transition: transform .3s ease-in-out;
 }

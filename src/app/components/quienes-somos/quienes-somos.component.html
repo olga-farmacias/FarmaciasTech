@@ -1,0 +1,119 @@
+<section class="wrapper">
+    <div class="container-gradient-violet">
+        <div class="width1600">
+            <div class="quienes">
+                <div class="title-part">
+                    <h1 class="title1">Bienvenidos a</h1>
+                    <img class="logo-blanco" src="/assets/logosFarmacias/logo-blanco.png" alt="logo farmacias.tech">
+                </div>
+                <div class="text1-bottom">
+                    <p class="text1 space-after">Somos una empresa fundada por farmacéuticos.</p>
+                    <p class="text1">Farmacias.tech es parte de La Hermandad Farmacéutica Digital, HEFADI. Y parte de nuestro ímpetu por catalizar la digitalización del sector farmaceútico creando lazos de unión y colaboración entre las farmacias y el resto de actores de la industria.</p>       
+                </div>
+            </div>
+        </div>
+<!--         <img class="trazado-down" src="/assets/quienes-somos/trazadoDown.png">
+        <img class="trazado-up" src="/assets/quienes-somos/trazadoUp.png">
+ -->    </div>
+</section>
+<section class="wrapper">
+    <div class="container">
+        <div class="width1600">
+            <div class="entorno-digital">
+                <div class="title">
+                    <h2 class="promovemos">Promovemos la defensa <br> del <span class="promovemos-bold">modelo farmacéutico en el entorno digital.</span></h2>
+                    <p class="text1-promovemos">Nos enorgullece colaborar con las mejores marcas del sector farmacéutico y tecnología. Nuestra asociación estratégica con <span class="promovemos-bold"> empresas líderes como Unycop, Nixfarma, Google y Nostic,</span> nos permite ofrecer soluciones innovadoras y de vanguardia a nuestros clientes. <br>La confianza es fundamental en nuestras colaboraciones, y estas marcas reconocidas han depositado su confianza en nosotros. Esta confianza se basa en nuestra larga trayectoria de profesionalidad y compromiso con la excelencia en cada proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper">
+    <div class="container-color">
+        <div class="width1600">
+            <div class="equipo1">
+                <div class="text-part">
+                    <h3 class="title-equipo">Ponemos en valor <span class="equipo-bold">a las farmacias</span></h3>
+                    <div class="text-equipo">
+                        <p>Trabajamos activamente, siempre del lado de la farmacia:</p>
+                        <li>Consejo Farmacéutico</li>
+                        <li>Servicios todo en uno</li>
+                        <li>Geolocalización y logística</li>
+                        <li>Directo al paciente</li>
+                    </div>
+                </div>
+                <div class="img-part">
+                    <img src="/assets/quienes-somos/Equipo1.png" alt="img-equipo" class="img-equipo">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper">
+    <div class="container">
+        <div class="width1600">
+            <div>
+                <h2 class="block-5">Equipo + Know How + Socios Farmacéuticos + Servicios + Tecnología</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrapper">
+    <div class="container">
+        <div class="width1600">
+            <div class="nuestras-marcas">
+                <div class="marcas">
+                    <h3 class="title-marcas">Nuestras marcas</h3>               
+                    <div class="logo-marcas">
+                        <img class="logo" src="/assets/logosFarmacias/soyfarmaceutico.png" alt="logo">
+                        <img class="logo" src="/assets/logosFarmacias/farmaciasTech.png" alt="logo">
+                        <img class="logo" src="/assets/logosFarmacias/farmaciasEs.png" alt="logo">
+                        <img class="logo" src="/assets/logosFarmacias/farmaciasCom.png" alt="logo">
+                        <img class="logo" src="/assets/logosFarmacias/farmaciasJobs.png" alt="logo">
+                    </div>
+                    <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                            <img src="{{ slide.img }}" alt="logo-farmacias" width="80%">
+                        </div>
+                    </ngx-slick-carousel>
+                    <ngx-slick-carousel class="carousel-big" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfigBig">
+                        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+                            <img src="{{ slide.img }}" alt="logo-farmacias" width="80%">
+                        </div>
+                    </ngx-slick-carousel>
+
+<!--                     <p class="title-marcas">colaboramos con</p>
+                    <div class="partners-group">
+                        <img src="/assets/partners/unycop.png" alt="" class="partners">
+                        <img src="/assets/partners/nixfarma.jpg" alt="" class="partners">
+                        <img src="/assets/partners/google.png" alt="" class="partners">
+                        <img src="/assets/partners/nostic.png" alt="" class="partners">
+                    </div>
+                    <ngx-slick-carousel class="carousel" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfig">
+                        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
+                            <img src="{{ slide.img }}" alt="logo-partners" width="80%">
+                        </div>
+                    </ngx-slick-carousel>
+                    <ngx-slick-carousel class="carousel-big" 
+                    #slickModal="slick-carousel" 
+                    [config]="slideConfigBig">
+                        <div ngxSlickItem *ngFor="let slide of slides2" class="slide">
+                            <img src="{{ slide.img }}" alt="logo-partners" width="80%">
+                        </div>
+                    </ngx-slick-carousel>
+ -->                </div>
+            </div>
+        </div>
+    </div>
+    <div class="btns-app">
+        <button class="btn-app" type="button"><a class="btn-app" href="https://reuniones.clientify.com/#/Josepiquer/tech" target="_blank">Habla con un experto</a></button>
+    </div>     
+</section>
+
+

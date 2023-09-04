@@ -13,6 +13,55 @@ body {
     width: 100%;
 }
 
+.container-gradient-blue {
+    background-image: linear-gradient(#AFB6E5, #E3EEFC);
+    width: 100%;
+}
+
+.container-gradient-orange {
+    background-image: linear-gradient(rgb(247, 147, 30, 1), rgb(253, 184, 19, 0.16));
+    width: 100%;
+}
+
+.container-gradient-blue-orange {
+    background-image: linear-gradient(rgba(5, 166, 164, 1), rgba(253, 184, 19, 0.22));
+    width: 100%;
+}
+
+.container-gradient-lightblue {
+    background-image: linear-gradient(#2B80FF, rgb(0, 199, 197, 0.58));
+    width: 100%;
+}
+
+.container-gradient-violet {
+    background-image: linear-gradient(#361CAC, #D83BFF);
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    .container-gradient-blue {
+        background-image: linear-gradient(to right, #AFB6E5, #E3EEFC);
+    }
+
+    .container-gradient-orange {
+        background-image: linear-gradient(to right, rgb(247, 147, 30, 1), rgb(253, 184, 19, 0.16));
+    }
+
+    .container-gradient-blue-orange {
+        background-image: linear-gradient(to right,rgba(5, 166, 164, 1), rgba(253, 184, 19, 0.22));
+    }
+
+    .container-gradient-lightblue {
+        background-image: linear-gradient(to right, #2B80FF, rgb(0, 199, 197, 0.58));
+    }
+
+    .container-gradient-violet {
+        background-image: linear-gradient(to right, #361CAC, #D83BFF);
+        width: 100%;
+    }    
+    
+}
+
 .container-color {
     background-color: #EFF1FE;
     width: 100%;
@@ -51,7 +100,6 @@ body {
         display: none;
     } 
 }
-
 
 
 
