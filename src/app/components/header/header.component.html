@@ -1,21 +1,47 @@
 <div class="wrapper">
-    <div class="container">
-<!--         <div class="banner-header" [ngClass] = "{'closed': estado, 'open': !estado}">
+  <div class="container">
+    <!--         <div class="banner-header" [ngClass] = "{'closed': estado, 'open': !estado}">
             <span class="text-banner-header">info@farmacias.tech Tel.: 910 602 748</span>
             <button class="btn-banner" type="button" (click)="cambiarEstado()">
                 <span class="btn-banner-close">X</span>
             </button>
         </div>
- -->        <div class="width1600">
-            <div class="header">
-                <img [routerLink]="['inicio']" class="logo-farmaciasTech" src="/assets/logosFarmacias/farmaciasTech.png" alt="logo-farmaciasTech">
-                <nav>
-                    <ul class="nav-menu">
-                        <li><a [routerLink]="['quienes-somos']" routerLinkActive="link-selected">Quienes somos</a></li>
-                        <li><a [routerLink]="['buy-now']" routerLinkActive="link-selected">Buy Now</a></li>
-                        <li><a [routerLink]="['monitoriza-tu-marca']" routerLinkActive="link-selected">Monitoriza tu marca</a></li>
-                        <li><a [routerLink]="['ads']" routerLinkActive="link-selected">Ads, Publicidad b2c - b2b</a></li>
-                       <!--  <li><a [routerLink]="" (click)="openServicios()">Servicios</a></li>
+ -->
+    <div class="width1600">
+      <div class="header">
+        <img
+          [routerLink]="['inicio']"
+          class="logo-farmaciasTech"
+          src="/assets/logosFarmacias/farmaciasTech.png"
+          alt="logo-farmaciasTech"
+        />
+        <nav>
+          <ul class="nav-menu">
+            <li>
+              <a
+                [routerLink]="['quienes-somos']"
+                routerLinkActive="link-selected"
+                >Quienes somos</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['buy-now']" routerLinkActive="link-selected"
+                >Buy Now</a
+              >
+            </li>
+            <li>
+              <a
+                [routerLink]="['monitoriza-tu-marca']"
+                routerLinkActive="link-selected"
+                >Monitoriza tu marca</a
+              >
+            </li>
+            <li>
+              <a [routerLink]="['ads']" routerLinkActive="link-selected"
+                >Ads, Publicidad b2c - b2b</a
+              >
+            </li>
+            <!--  <li><a [routerLink]="" (click)="openServicios()">Servicios</a></li>
                         <ng-container *ngIf="subMenu">
                             <ul class="sub-menu">
                                 <li><a class="sub-menu-option" [routerLink]="['buy-now']" routerLinkActive="link-selected">Buy Now</a></li>
@@ -23,18 +49,32 @@
                                 <li><a class="sub-menu-option" [routerLink]="['ads']" routerLinkActive="link-selected">Ads, Publicidad b2c - b2b</a></li>
                             </ul>
                         </ng-container> -->
-                    </ul>
-                </nav>
-                <div class="btns">
-                    <div class="btn-login">
-                        <button class="btn-contactanos"><a class="btn-contactanos" href="https://reuniones.clientify.com/#/Josepiquer/tech" target="_blank">Contáctanos</a></button>    
-                    </div>
-                    <div class="btn-login">
-                        <button class="btn-contactanos"><a class="btn-contactanos" href="https://app.farmacias.tech/#/login" target="_blank">Login</a></button>    
-                    </div>    
-                </div>
-                <app-hamburger-menu [bannerClosed]="estado"></app-hamburger-menu>           
-            </div>        
+          </ul>
+        </nav>
+        <div class="btns">
+          <div class="btn-login">
+            <button class="btn-contactanos">
+              <a
+                class="btn-contactanos"
+                href="https://reuniones.clientify.com/#/Josepiquer/Hefadi"
+                target="_blank"
+                >Contáctanos</a
+              >
+            </button>
+          </div>
+          <div class="btn-login">
+            <button class="btn-contactanos">
+              <a
+                class="btn-contactanos"
+                href="https://app.farmacias.tech/#/login"
+                target="_blank"
+                >Login</a
+              >
+            </button>
+          </div>
         </div>
+        <app-hamburger-menu [bannerClosed]="estado"></app-hamburger-menu>
+      </div>
     </div>
+  </div>
 </div>
